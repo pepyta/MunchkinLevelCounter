@@ -44,8 +44,7 @@ public class MainActivity extends AppCompatActivity{
                 Log.d("event", "onShake");
             }
         });
-        //IF YOU WANT JUST IN BACKGROUND
-        //this.shakeDetector = new ShakeDetector(options).start(this);
+
     }
     private void buildView() {
         Button btnStopService = (Button) findViewById(R.id.btnStopService);
