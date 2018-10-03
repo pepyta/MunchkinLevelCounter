@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MunchkinLevelCounter</string>
+
+    <string name="level">Level</string>
+    <string name="total">TOTAL</string>
+    <string name="gear">Gear</string>
+
+    <string name="roll">ROLL</string>
 </resources>
