@@ -13,17 +13,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-<<<<<<< HEAD
-public  class MainActivity extends AppCompatActivity{
-=======
 import safety.com.br.android_shake_detector.core.ShakeCallback;
 import safety.com.br.android_shake_detector.core.ShakeDetector;
 import safety.com.br.android_shake_detector.core.ShakeOptions;
 
 public class MainActivity extends AppCompatActivity{
     private ShakeDetector shakeDetector;
->>>>>>> bf9717a296efe0c019959ae0a2edd9eaa544b821
     int gear = 0;
     int level = 1;
     @Override
@@ -136,42 +131,6 @@ public class MainActivity extends AppCompatActivity{
 
     private void updateRNG(int dobas) {
         TextView displayInteger = (TextView)findViewById(R.id.rng);
-        displayInteger.setText(Integer.toString(dobas)); // "dasdsasdajdsoajdosajoasj" 132 => "132"
+        displayInteger.setText(Integer.toString(dobas));
     }
-
-<<<<<<< HEAD
- /*
-     SensorManager sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
-sensorMgr.registerListener(this,
-    SensorManager.SENSOR_ACCELEROMETER,
-    SensorManager.SENSOR_DELAY_GAME);
-    public void onSensorChanged(int sensor, float[] values) {
-        if (sensor == SensorManager.SENSOR_ACCELEROMETER) {
-            long curTime = System.currentTimeMillis();
-            // only allow one update every 100ms.
-            if ((curTime - lastUpdate) > 100) {
-                long diffTime = (curTime - lastUpdate);
-                lastUpdate = curTime;
-
-                x = values[SensorManager.DATA_X];
-                y = values[SensorManager.DATA_Y];
-                z = values[SensorManager.DATA_Z];
-
-                float speed = Math.abs(x+y+z - last_x - last_y - last_z) / diffTime * 10000;
-
-                if (speed > SHAKE_THRESHOLD) {
-                    Log.d("sensor", "shake detected w/ speed: " + speed);
-                    Toast.makeText(this, "shake detected w/ speed: " + speed, Toast.LENGTH_SHORT).show();
-                }
-                last_x = x;
-                last_y = y;
-                last_z = z;
-            }
-        }
-    }
- */
-=======
-
->>>>>>> bf9717a296efe0c019959ae0a2edd9eaa544b821
-    private static final int SHAKE_THRESHOLD = 800;
 }
