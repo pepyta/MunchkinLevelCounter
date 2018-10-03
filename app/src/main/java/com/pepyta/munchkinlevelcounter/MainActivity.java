@@ -92,7 +92,7 @@ public abstract class MainActivity extends AppCompatActivity implements SensorLi
     }
 
 
-    SensorManager sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
+     SensorManager sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
 sensorMgr.registerListener(this,
     SensorManager.SENSOR_ACCELEROMETER,
     SensorManager.SENSOR_DELAY_GAME);
