@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        buildView();
 
         ShakeOptions options = new ShakeOptions()
                 .background(true)
@@ -35,16 +34,6 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-    }
-    private void buildView() {
-        Button btnStopService = (Button) findViewById(R.id.btnStopService);
-        btnStopService.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("destroy", "destroy service shake");
-                shakeDetector.stopShakeDetector(getBaseContext());
-            }
-        });
     }
     @Override
     protected void onStop() {
