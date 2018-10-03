@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity{
     int gear = 0;
     int level = 1;
     boolean woman = false;
+    int identity  = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ShakeOptions options = new ShakeOptions()
                 .background(true)
                 .interval(1000)
