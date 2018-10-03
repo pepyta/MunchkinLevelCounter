@@ -9,7 +9,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public abstract class MainActivity extends AppCompatActivity implements SensorListener{
+public  class MainActivity extends AppCompatActivity{
     int gear = 0;
     int level = 1;
     @Override
@@ -91,7 +91,7 @@ public abstract class MainActivity extends AppCompatActivity implements SensorLi
         displayInteger.setText(Integer.toString(dobas)); // "dasdsasdajdsoajdosajoasj" 132 => "132"
     }
 
-
+ /*
      SensorManager sensorMgr = (SensorManager)getSystemService(SENSOR_SERVICE);
 sensorMgr.registerListener(this,
     SensorManager.SENSOR_ACCELEROMETER,
@@ -120,6 +120,6 @@ sensorMgr.registerListener(this,
             }
         }
     }
-
+ */
     private static final int SHAKE_THRESHOLD = 800;
 }
