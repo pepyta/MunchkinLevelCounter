@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onShake() {
                 Log.d("event", "onShake");
+                roll();
             }
         });
         //IF YOU WANT JUST IN BACKGROUND
@@ -99,16 +100,11 @@ public class MainActivity extends AppCompatActivity{
 
     }
 
-    public void roll(android.view.View view){
-        updateRNG(rollDice());
-    }
-    @Override
-    public void onBackPressed() {
+    public void roll(){
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Roll");
         alert.setMessage(Integer.toString(rollDice()));
         alert.show();
-
     }
     public int rollDice(){
         int dobas = (int)(Math.random()*6+1);
@@ -128,10 +124,5 @@ public class MainActivity extends AppCompatActivity{
     private void updateOverall() {
         TextView displayInteger = (TextView)findViewById(R.id.total);
         displayInteger.setText(Integer.toString(level + gear));
-    }
-
-    private void updateRNG(int dobas) {
-        TextView displayInteger = (TextView)findViewById(R.id.rng);
-        displayInteger.setText(Integer.toString(dobas));
     }
 }
