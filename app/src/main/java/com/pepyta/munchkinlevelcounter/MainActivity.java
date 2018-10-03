@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity{
     private ShakeDetector shakeDetector;
     int gear = 0;
     int level = 1;
+    boolean woman = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,9 +109,15 @@ public class MainActivity extends AppCompatActivity{
         displayInteger.setText(Integer.toString(level + gear));
     }
 
-    public void buttonClick(View v)
+    public void changeGender(android.view.View view)
     {
-        TextView text = (TextView)findViewById(R.id.gender);
-        text.setText("Female");
+        Button gender = (Button)findViewById(R.id.gender);
+        if(woman){
+            gender.setText("Male");
+            woman = false;
+        } else {
+            gender.setText("Female");
+            woman = true;
+        }
     }
 }
