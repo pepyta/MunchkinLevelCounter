@@ -14,13 +14,21 @@ public class MainActivity extends AppCompatActivity{
     private ShakeDetector shakeDetector;
     int gear = 0;
     int level = 1;
+<<<<<<< HEAD
 
+=======
+    boolean woman = false;
+    int identity  = 0;
+>>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
         ShakeOptions options = new ShakeOptions()
                 .background(true)
                 .interval(1000)
@@ -36,7 +44,10 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
     @Override
     protected void onStop() {
         super.onStop();
@@ -109,6 +120,16 @@ public class MainActivity extends AppCompatActivity{
         TextView displayInteger = (TextView)findViewById(R.id.total);
         displayInteger.setText(Integer.toString(level + gear));
     }
-   
 
+    public void changeGender(android.view.View view)
+    {
+        Button gender = (Button)findViewById(R.id.gender);
+        if(woman){
+            gender.setText("Male");
+            woman = false;
+        } else {
+            gender.setText("Female");
+            woman = true;
+        }
+    }
 }
