@@ -15,11 +15,12 @@ public class MainActivity extends AppCompatActivity{
     private ShakeDetector shakeDetector;
     int gear = 0;
     int level = 1;
+    int identity  = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        buildView();
+
 
         ShakeOptions options = new ShakeOptions()
                 .background(true)
@@ -36,16 +37,7 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
-    private void buildView() {
-        Button btnStopService = (Button) findViewById(R.id.btnStopService);
-        btnStopService.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("destroy", "destroy service shake");
-                shakeDetector.stopShakeDetector(getBaseContext());
-            }
-        });
-    }
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -118,10 +110,6 @@ public class MainActivity extends AppCompatActivity{
         TextView displayInteger = (TextView)findViewById(R.id.total);
         displayInteger.setText(Integer.toString(level + gear));
     }
+   
 
-    public void buttonClick(View v)
-    {
-        TextView text = (TextView)findViewById(R.id.gender);
-        text.setText("Female");
-    }
 }
