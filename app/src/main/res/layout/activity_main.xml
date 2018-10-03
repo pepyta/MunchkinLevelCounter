@@ -10,14 +10,13 @@
     tools:context=".MainActivity">
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="45dp"
         android:text="@string/total"
         android:textSize="36sp" />
 
@@ -108,15 +107,14 @@
         android:text="+" />
 
 
-
-    <TextView
-        android:id="@+id/textView8"
+    <Button
+        android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button6"
-        android:layout_centerHorizontal="true" />
-
-
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:text="Male" />
 
 
 </RelativeLayout>

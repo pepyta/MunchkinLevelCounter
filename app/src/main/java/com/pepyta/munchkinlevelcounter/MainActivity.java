@@ -118,4 +118,10 @@ public class MainActivity extends AppCompatActivity{
         TextView displayInteger = (TextView)findViewById(R.id.total);
         displayInteger.setText(Integer.toString(level + gear));
     }
+
+    public void buttonClick(View v)
+    {
+        TextView text = (TextView)findViewById(R.id.gender);
+        text.setText("Female");
+    }
 }
