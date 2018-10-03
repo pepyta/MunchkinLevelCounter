@@ -131,4 +131,12 @@
         android:layout_centerHorizontal="true"
         android:text="0"
         android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="btnStopService" />
 </RelativeLayout>
