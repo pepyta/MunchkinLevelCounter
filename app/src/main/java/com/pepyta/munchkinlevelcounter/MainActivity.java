@@ -2,12 +2,6 @@ package com.pepyta.munchkinlevelcounter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
-import android.hardware.SensorListener;
-import android.hardware.SensorManager;
-import android.hardware.Sensor;
-import android.hardware.SensorEventListener;
-import android.app.Activity;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
