@@ -5,7 +5,6 @@ import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import safety.com.br.android_shake_detector.core.ShakeCallback;
 import safety.com.br.android_shake_detector.core.ShakeDetector;
@@ -15,15 +14,12 @@ public class MainActivity extends AppCompatActivity{
     private ShakeDetector shakeDetector;
     int gear = 0;
     int level = 1;
-    int identity  = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
 
-=======
->>>>>>> dd42dbf87792aaf453b4dc5461ed7a0469e55896
 
         ShakeOptions options = new ShakeOptions()
                 .background(true)
@@ -40,10 +36,7 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> dd42dbf87792aaf453b4dc5461ed7a0469e55896
     @Override
     protected void onStop() {
         super.onStop();
