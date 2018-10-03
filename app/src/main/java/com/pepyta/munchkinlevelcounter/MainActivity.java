@@ -1,34 +1,36 @@
 package com.pepyta.munchkinlevelcounter;
 
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import safety.com.br.android_shake_detector.core.ShakeCallback;
 import safety.com.br.android_shake_detector.core.ShakeDetector;
 import safety.com.br.android_shake_detector.core.ShakeOptions;
 
 public class MainActivity extends AppCompatActivity{
+
     private ShakeDetector shakeDetector;
     int gear = 0;
     int level = 1;
-<<<<<<< HEAD
-
-=======
     boolean woman = false;
-    int identity  = 0;
->>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
         ShakeOptions options = new ShakeOptions()
                 .background(true)
                 .interval(1000)
@@ -44,10 +46,6 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 609ccdb9d4c665128b5a6da6f859e8b685ea7a6b
     @Override
     protected void onStop() {
         super.onStop();
@@ -132,4 +130,5 @@ public class MainActivity extends AppCompatActivity{
             woman = true;
         }
     }
+
 }
