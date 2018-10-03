@@ -20,7 +20,10 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd42dbf87792aaf453b4dc5461ed7a0469e55896
 
         ShakeOptions options = new ShakeOptions()
                 .background(true)
@@ -37,7 +40,10 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd42dbf87792aaf453b4dc5461ed7a0469e55896
     @Override
     protected void onStop() {
         super.onStop();
