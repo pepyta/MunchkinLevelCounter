@@ -1,5 +1,7 @@
 package com.pepyta.munchkinlevelcounter;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -23,12 +25,16 @@ import safety.com.br.android_shake_detector.core.ShakeOptions;
 public class MainActivity extends AppCompatActivity{
 
     private ShakeDetector shakeDetector;
-    int gear = 0;
-    int level = 1;
+    int gear;
+    int level;
     boolean woman = false;
+    private SharedPreferences prefs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        level = prefs.getInt("level", 1);
+        gear = prefs.getInt("gear", 0);
         setContentView(R.layout.activity_main);
 
         ShakeOptions options = new ShakeOptions()
@@ -51,6 +57,13 @@ public class MainActivity extends AppCompatActivity{
         super.onStop();
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Editor editPrefs = prefs.edit();
+        editPrefs.putInt("myProgress", newProgressValue);
+        editPrefs.commit();
+    }
     @Override
     protected void onDestroy() {
         shakeDetector.destroy(getBaseContext());
