@@ -50,7 +50,9 @@ public class MainActivity extends AppCompatActivity{
                 roll();
             }
         });
-
+        updateGear();
+        updateLevel();
+        updateOverall();
     }
     @Override
     protected void onStop() {
@@ -60,8 +62,9 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onPause() {
         super.onPause();
-        Editor editPrefs = prefs.edit();
-        editPrefs.putInt("myProgress", newProgressValue);
+        SharedPreferences.Editor editPrefs = prefs.edit();
+        editPrefs.putInt("level", level);
+        editPrefs.putInt("gear", gear);
         editPrefs.commit();
     }
     @Override
