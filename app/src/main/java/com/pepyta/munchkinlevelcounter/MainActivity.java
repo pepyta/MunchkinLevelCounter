@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity{
         prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         level = prefs.getInt("level", 1);
         gear = prefs.getInt("gear", 0);
+        woman = prefs.getBoolean("woman", false);
         setContentView(R.layout.activity_main);
 
         ShakeOptions options = new ShakeOptions()
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity{
         SharedPreferences.Editor editPrefs = prefs.edit();
         editPrefs.putInt("level", level);
         editPrefs.putInt("gear", gear);
+        editPrefs.putBoolean("woman", woman);
         editPrefs.commit();
     }
     @Override
