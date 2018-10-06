@@ -120,14 +120,13 @@
 
     <Button
         android:id="@+id/gender"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/total"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorPrimary"
         android:onClick="changeGender"
-        android:text="Male"
-        android:textColor="@color/colorBackground" />
+        android:text="Male" />
 
 
 </RelativeLayout>
