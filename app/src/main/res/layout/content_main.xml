@@ -5,7 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@color/colorBackground"
+=======
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
     android:keepScreenOn="true"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -75,10 +78,15 @@
 
     <Button
         android:id="@+id/button"
+<<<<<<< HEAD
+=======
+        style="@style/Widget.MaterialComponents.Button"
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/level"
         android:layout_toEndOf="@+id/textView"
+<<<<<<< HEAD
         android:background="@color/colorPrimary"
         android:onClick="increaseLevel"
         android:text="+"
@@ -86,10 +94,20 @@
 
     <Button
         android:id="@+id/button2"
+=======
+        android:onClick="increaseLevel"
+        android:text="+"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.MaterialComponents.Button"
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/level"
         android:layout_toStartOf="@+id/textView"
+<<<<<<< HEAD
         android:background="@color/colorPrimary"
         android:onClick="decreaseLevel"
         android:text="-"
@@ -97,10 +115,20 @@
 
     <Button
         android:id="@+id/button3"
+=======
+        android:onClick="decreaseLevel"
+        android:text="-"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.MaterialComponents.Button"
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView4"
         android:layout_toStartOf="@+id/textView"
+<<<<<<< HEAD
         android:background="@color/colorPrimary"
         android:onClick="decreaseGear"
         android:text="-"
@@ -108,26 +136,51 @@
 
     <Button
         android:id="@+id/button4"
+=======
+        android:onClick="decreaseGear"
+        android:text="-"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.MaterialComponents.Button"
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView4"
         android:layout_toEndOf="@+id/textView"
+<<<<<<< HEAD
         android:background="@color/colorPrimary"
         android:onClick="increaseGear"
         android:text="+"
         android:textColor="@color/colorBackground" />
+=======
+        android:onClick="increaseGear"
+        android:text="+"
+        android:textSize="18sp" />
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
 
 
     <Button
         android:id="@+id/gender"
+<<<<<<< HEAD
+=======
+        style="@style/Widget.MaterialComponents.Button"
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/total"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
         android:background="@color/colorPrimary"
         android:onClick="changeGender"
         android:text="Male"
         android:textColor="@color/colorBackground" />
+=======
+        android:onClick="changeGender"
+        android:text="MALE"
+        android:textSize="14sp" />
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
 
 
 </RelativeLayout>
