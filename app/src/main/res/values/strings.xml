@@ -20,4 +20,5 @@
 
     <string name="action_example">Example action</string>
     <string name="title_activity_navbar">navbar</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
