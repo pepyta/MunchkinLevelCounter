@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import safety.com.br.android_shake_detector.core.ShakeCallback;
 import safety.com.br.android_shake_detector.core.ShakeDetector;
@@ -143,12 +144,12 @@ public class MainActivity extends AppCompatActivity{
 
     public void changeGender(android.view.View view)
     {
-        Button gender = (Button)findViewById(R.id.gender);
+        ImageButton gender = (ImageButton)findViewById(R.id.gender);
         if(woman){
-            gender.setBackgroundResource(R.drawable.);
+            gender.setBackgroundResource(R.drawable.male);
             woman = false;
         } else {
-            gender.setBackgroundResource(R.drawable.);
+            gender.setBackgroundResource(R.drawable.female);
             woman = true;
         }
     }
