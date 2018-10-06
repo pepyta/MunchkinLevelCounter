@@ -162,6 +162,16 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    public void resetLevel(android.view.View view){
+        if(level > 1)
+            level = 1;
+
+        updateLevel();
+        updateOverall();
+
+    }
+
+
     /*
     Gear increase & decrease
      */
