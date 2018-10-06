@@ -203,9 +203,9 @@ public class MainActivity extends AppCompatActivity
     private void updateGender() {
         Button gender = (Button)findViewById(R.id.gender);
         if(woman){
-            gender.setText("Male");
+            gender.setText("MALE");
         } else {
-            gender.setText("Female");
+            gender.setText("FEMALE");
         }
     }
 
