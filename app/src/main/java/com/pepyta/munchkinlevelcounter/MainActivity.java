@@ -23,21 +23,15 @@ import safety.com.br.android_shake_detector.core.ShakeDetector;
 import safety.com.br.android_shake_detector.core.ShakeOptions;
 
 public class MainActivity extends AppCompatActivity{
-<<<<<<< HEAD
-    private ShakeDetector shakeDetector;
-    int gear = 0;
-    int level = 1;
 
-    boolean woman = false;
 
-=======
 
     private ShakeDetector shakeDetector;
     int gear;
     int level;
     boolean woman = false;
     private SharedPreferences prefs;
->>>>>>> a5657acd124d78eeab011ec5135645be671c2a44
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,10 +58,7 @@ public class MainActivity extends AppCompatActivity{
         updateLevel();
         updateOverall();
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> a5657acd124d78eeab011ec5135645be671c2a44
     @Override
     protected void onStop() {
         super.onStop();
@@ -154,10 +145,10 @@ public class MainActivity extends AppCompatActivity{
     {
         Button gender = (Button)findViewById(R.id.gender);
         if(woman){
-            gender.setText("Male");
+            gender.setBackgroundResource(R.drawable.);
             woman = false;
         } else {
-            gender.setText("Female");
+            gender.setBackgroundResource(R.drawable.);
             woman = true;
         }
     }
