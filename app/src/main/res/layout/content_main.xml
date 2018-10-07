@@ -74,43 +74,47 @@
 
     <Button
         android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/level"
         android:layout_toEndOf="@+id/textView"
         android:onClick="increaseLevel"
-        android:text="+" />
+        android:text="+"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/level"
         android:layout_toStartOf="@+id/textView"
         android:onClick="decreaseLevel"
-        android:text="-" />
+        android:text="-"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView4"
         android:layout_toStartOf="@+id/textView"
         android:onClick="decreaseGear"
-        android:text="-" />
+        android:text="-"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView4"
         android:layout_toEndOf="@+id/textView"
         android:onClick="increaseGear"
-        android:text="+" />
+        android:text="+"
+        android:textSize="24sp" />
         android:onClick="increaseGear"
         android:text="+"
         android:textSize="18sp" />
@@ -118,13 +122,14 @@
 
     <Button
         android:id="@+id/gender"
-        style="@style/Widget.AppCompat.Button"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/total"
         android:layout_centerHorizontal="true"
         android:onClick="changeGender"
-        android:text="Male" />
+        android:text="Male"
+        android:textSize="18sp" />
         android:onClick="changeGender"
         android:text="MALE"
         android:textSize="14sp" />
