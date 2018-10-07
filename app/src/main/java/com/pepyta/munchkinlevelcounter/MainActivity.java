@@ -24,18 +24,6 @@ import safety.com.br.android_shake_detector.core.ShakeCallback;
 import safety.com.br.android_shake_detector.core.ShakeDetector;
 import safety.com.br.android_shake_detector.core.ShakeOptions;
 
-<<<<<<< HEAD
-public class MainActivity extends AppCompatActivity{
-
-
-
-    private ShakeDetector shakeDetector;
-    int gear;
-    int level;
-    boolean woman = false;
-    private SharedPreferences prefs;
-
-=======
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private ShakeDetector shakeDetector;
@@ -43,7 +31,6 @@ public class MainActivity extends AppCompatActivity
     int level = 1;
     boolean woman = false;
     private SharedPreferences prefs;
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,9 +90,6 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
-<<<<<<< HEAD
-=======
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -139,8 +123,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
     @Override
     protected void onStop() {
         super.onStop();
@@ -244,18 +226,17 @@ public class MainActivity extends AppCompatActivity
 
     public void changeGender(android.view.View view)
     {
-<<<<<<< HEAD
-        ImageButton gender = (ImageButton)findViewById(R.id.gender);
+        /*ImageButton gender = (ImageButton)findViewById(R.id.gender);
         if(woman){
             gender.setBackgroundResource(R.drawable.male);
             woman = false;
         } else {
             gender.setBackgroundResource(R.drawable.female);
-=======
+        }
+            */
         if(woman){
             woman = false;
         } else {
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
             woman = true;
         }
         updateGender();

@@ -13,20 +13,6 @@
                       <PersistentState>
                         <option name="children">
                           <map>
-                            <entry key="actionbar">
-                              <value>
-                                <PersistentState>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\pepyta\Desktop\62727-200.png" />
-                                      <entry key="outputName" value="ic_roll_dice" />
-                                      <entry key="theme" value="HOLO_DARK" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
                             <entry key="launcher">
                               <value>
                                 <PersistentState>
@@ -49,11 +35,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-<<<<<<< HEAD
-                                      <entry key="backgroundColor" value="a66f39" />
-=======
                                       <entry key="backgroundColor" value="ffd09a" />
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
                                       <entry key="foregroundImage" value="C:\Users\pepyta\Desktop\viking-hat-clipart-1.jpg.png" />
                                     </map>
                                   </option>
@@ -68,11 +50,6 @@
                 </map>
               </option>
             </PersistentState>
-          </value>
-        </entry>
-        <entry key="vectorWizard">
-          <value>
-            <PersistentState />
           </value>
         </entry>
       </map>

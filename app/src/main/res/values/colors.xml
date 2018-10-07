@@ -2,10 +2,6 @@
 <resources>
     <color name="colorPrimary">#49250b</color>49250b
     <color name="colorPrimaryDark">#2c1200</color>
-<<<<<<< HEAD
-    <color name="colorAccent">#ffd09a</color>
-=======
     <color name="colorAccent">#49250b</color>
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
     <color name="colorBackground">#ffd09a</color>
 </resources>

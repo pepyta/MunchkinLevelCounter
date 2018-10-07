@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <color name="ic_launcher_background">#A66F39</color>
-=======
     <color name="ic_launcher_background">#FFD09A</color>
->>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
 </resources>
