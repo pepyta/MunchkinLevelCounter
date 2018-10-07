@@ -16,9 +16,48 @@
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
+<<<<<<< HEAD
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/level"
+        android:layout_toStartOf="@+id/textView"
+        android:onClick="decreaseLevel"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toStartOf="@+id/textView"
+        android:onClick="decreaseGear"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView"
+        android:onClick="increaseGear"
+        android:text="+" />
+
+
+    <ImageButton
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:onClick="changeGender"
+        android:src="@drawable/male"
+        />
+
+=======
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/activity_main_drawer" />
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
 
 </android.support.v4.widget.DrawerLayout>

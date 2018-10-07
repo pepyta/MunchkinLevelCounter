@@ -49,7 +49,11 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
+<<<<<<< HEAD
+                                      <entry key="backgroundColor" value="a66f39" />
+=======
                                       <entry key="backgroundColor" value="ffd09a" />
+>>>>>>> e0d64c66b7da2106c88d455aefa87a8b72a7369f
                                       <entry key="foregroundImage" value="C:\Users\pepyta\Desktop\viking-hat-clipart-1.jpg.png" />
                                     </map>
                                   </option>
