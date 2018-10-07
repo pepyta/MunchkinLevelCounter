@@ -210,11 +210,11 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void updateGender() {
-        Button gender = (Button)findViewById(R.id.gender);
+        ImageButton gender2 = (ImageButton)findViewById(R.id.gender2);
         if(woman){
-            gender.setText("MALE");
+            gender2.setBackgroundResource(R.drawable.male);
         } else {
-            gender.setText("FEMALE");
+            gender2.setBackgroundResource(R.drawable.female);
         }
     }
 

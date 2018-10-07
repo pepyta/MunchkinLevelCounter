@@ -114,23 +114,33 @@
         android:layout_toEndOf="@+id/textView"
         android:onClick="increaseGear"
         android:text="+"
-        android:textSize="24sp" />
+        android:textSize="24sp" /><![CDATA[
         android:onClick="increaseGear"
         android:text="+"
         android:textSize="18sp" />
 
 
-    <Button
-        android:id="@+id/gender"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/total"
-        android:layout_centerHorizontal="true"
+    ]]>
+
+    <ImageButton
+        android:id="@+id/gender2"
+        style="@android:style/Widget.Material.Light.ImageButton"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_above="@+id/total"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="-99dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/male"
+        android:cropToPadding="false"
         android:onClick="changeGender"
-        android:text="Male"
-        android:textSize="18sp" />
-        android:onClick="changeGender"
+        android:scaleType="centerCrop" />
+    android:onClick="changeGender"
         android:text="MALE"
         android:textSize="14sp" />
 
