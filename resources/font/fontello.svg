@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="dice" unicode="&#xe800;" d="M1156 475h-232c25-58 14-127-33-174l-266-267v-90c0-52 42-94 94-94h437c52 0 94 42 94 94v437c0 52-42 94-94 94z m-218-359c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z m-91 364l-342 342c-37 37-98 37-135 0l-342-342c-37-37-37-98 0-135l342-342c37-37 98-37 135 0l342 342c37 37 37 98 0 135z m-659-114c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z m250-250c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z m0 250c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z m0 250c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z m250-250c-26 0-47 21-47 47 0 25 21 46 47 46s46-21 46-46c0-26-21-47-46-47z" horiz-adv-x="1250" />
+</font>
+</defs>
+</svg>
