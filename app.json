@@ -27,7 +27,14 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "me.pepyta.munchkin"
-    }
+      "package": "me.pepyta.munchkin",
+      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle",
+      "publishManifestPath": "android\\app\\src\\main\\assets\\shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.14.0-sdk36.0.0-fb8689e6-fd42-4b18-b01f-ac2ef3bc8681.tar.gz"
+    },
+    "scheme": "exp1980e73ae1564e9596d1bf4e651a5969"
   }
 }
