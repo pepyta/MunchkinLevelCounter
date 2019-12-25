@@ -5,6 +5,8 @@ before_install: #1.1
 install: #1.2
 - npm install
 - chmod +x android/gradlew
+- echo yes | sdkmanager build-tools;28.0.3
+- echo yes | sdkmanager platforms;android-28
 android: #1.3
   components:
   - build-tools-23.0.1
